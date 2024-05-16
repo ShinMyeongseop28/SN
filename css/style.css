@@ -1,0 +1,209 @@
+@charset "utf-8";
+/* *,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}리셋 안할 시 사용 */
+
+/* ============= rayout common ===========*/
+.d-flex {
+    display: flex;
+}
+.flex-1 {
+    flex: 1;
+}
+.justify-between {
+    justify-content: space-between;
+}
+.justify-center {
+    justify-content: center;
+}
+.items-center {
+    align-items: center;
+}
+.text-center {
+    text-align: center;
+}
+.gap-1 {
+    gap: 1rem;
+}
+.gap-2 {
+    gap: 2rem;
+}
+.my-10 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.px-2 {
+    padding: 1rem 2rem;
+}
+.py-1 {
+    padding: 1rem 1rem;
+}
+.bg-blue {
+    background-color: blue;
+}
+.text-white {
+    color: white;
+}
+.rounded {
+    border-radius: 50%;
+}
+
+/* ============= #header_top ============= */
+.container {
+    border-bottom: 1px solid gray;
+    margin-bottom: 50px;
+}
+#header_top {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.links ul li{
+    margin: 10px;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+}
+.promotion {
+    position: relative;
+    height: 335px;
+}
+.promo_model, .promo_bg {
+    position: absolute;
+}
+.promo_model {
+    z-index: 1;
+    right: 20%;
+}
+.promo_bg {
+    bottom: 0;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(0,111,255);
+}
+#gnb {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    gap: 1rem;
+    background-color: black;
+    color: white;
+    height: 60px;
+}
+#gnb a:hover {
+    color: #01ccff;
+}
+
+/* ========== 요금표, 출연진표 스타일 ========= */
+#fee, #cast {
+    width: 600px;
+    margin: 0 auto;
+}
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+#fee th, #fee td {
+    text-align: center;
+    padding: 15px 0;
+    vertical-align: middle;
+}
+th {
+    font-size: 15px;
+    background-color: #f7f7f7;
+}
+caption {
+    font-size: 18px;
+    font-weight: bold; /* 글꼴-두께: 두껍게 */
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+#cast {
+    margin-top: 50px;
+    margin-bottom: 70px;
+}
+#cast th {
+    width: 120px; /* width: calc(100% / 4); */
+    text-align:center;
+    padding: 15px 0;    
+}
+#cast td {
+    padding-left: 5%;
+}
+.contents {
+    font-size: 15px; /* 글꼴-크기: 값; */
+    line-height: 1.4; /* 행-간격: 기본값 1.4배 (예 */
+}
+.contents h2 {
+    font-size: 20px;
+    margin: 20px 0;
+}
+.mx_auto {
+    margin: 0 auto;
+}
+.w400 {
+    max-width: 400px; /* 최대-폭: 400픽셀 */
+}
+/* =============== 로그인 폼 =============== */
+.article_title {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+legend {
+    /* display: none; */
+    position: absolute;
+    left: -9999px;
+}
+
+.bordered {
+    border: 1px solid lightgray;
+}
+input {
+    border: 1px solid lightgray;
+
+}
+label {
+    width: 65px;
+}
+
+#snb {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+    height: 50px;
+    gap: 1rem;
+    background-color: #fafafa;
+    color: #666;
+    border-top: solid 1px gray;
+}
+.site-info {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: black;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.address, .copy-sign {
+    color: #999;
+}
+.address {
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+.copy-sign {
+    font-size: 12px;
+}
