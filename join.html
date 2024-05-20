@@ -67,38 +67,41 @@
         <section>
             <article>
                 <h2 class="article_title">회원가입</h2>
-                <div id="signup_form" class="w400 mx_auto">
-                    <div class="d-flex items-center gap-1 my-10">
-                        <label for="">아이디(이메일)</label>
-                        <input type="text" class="flex-1 py-1">
+                <form method="post" action="http://localhost:3000/signup">
+                    <div id="signup_form" class="w400 mx_auto">
+                        <div class="d-flex items-center gap-1 my-10">
+                            <label for="user_id">아이디(이메일)</label>
+                            <input type="text" id="user_id" name="user_id" class="flex-1 py-1">
+                        </div>
+                        <div class="d-flex items-center gap-1 my-10">
+                            <label for="user_pass">비밀번호</label>
+                            <input type="password" id="user_pass" name="user_pass" class="flex-1 py-1">
+                        </div>
+                        <div class="d-flex items-center gap-1 my-10">
+                            <label for="user_pwd">비밀번호 확인</label>
+                            <input type="password" id="user_pwd" name="user_pwd" class="flex-1 py-1">
+                        </div>
+                        <div class="d-flex items-center gap-1 my-10">
+                            <label for="user_name">이름</label>
+                            <input type="text" id="user_name" name="user_name" class="flex-1 py-1">
+                        </div>
+                        <div class="d-flex items-center gap-1 my-10">
+                            <label for="cell_phone">휴대폰 번호</label>
+                            <input type="tel" id="cell_phone" name="cell_phone" class="flex-1 py-1">
+                        </div>
+                        <div class="d-flex items-center text-center gap-1 my-10">
+                            <a href="#">이용약관 전문보기</a>
+                            <label class="flex-1">
+                                <input type="checkbox" class="agree">모두 확인하였으며 동의합니다.
+                            </label>
+                        </div>
+                        <div class="d-flex items-center gap-1 my-10 justify-center">
+                            <input type="submit" class="px-2 py-1 bg-blue text-white rounded" value="로그인">
+                            <input type="reset" class="px-2 py-1 bg-blue text-white rounded" value="새로고침">
+                            <a href="">ID/PW찾기</a>
+                        </div>
                     </div>
-                    <div class="d-flex items-center gap-1 my-10">
-                        <label for="">비밀번호</label>
-                        <input type="password" class="flex-1 py-1">
-                    </div>
-                    <div class="d-flex items-center gap-1 my-10">
-                        <label for="user_pwd">비밀번호 확인</label>
-                        <input type="password" id="user_pwd" name="user_pwd" class="flex-1 py-1">
-                    </div>
-                    <div class="d-flex items-center gap-1 my-10">
-                        <label for="user_name">이름</label>
-                        <input type="text" id="user_name" name="user_name" class="flex-1 py-1">
-                    </div>
-                    <div class="d-flex items-center gap-1 my-10">
-                        <label for="cell_phone">휴대폰 번호</label>
-                        <input type="tel" id="cell_phone" name="cell_phone" class="flex-1 py-1">
-                    </div>
-                    <div class="d-flex items-center text-center gap-1 my-10">
-                        <label class="flex-1" for="">
-                            <input type="checkbox" class="agree">모두 확인하였으며 동의합니다.
-                        </label>                        
-                    </div>
-                    <div class="d-flex items-center gap-1 my-10 justify-center">
-                        <input type="submit" class="px-2 py-1 bg-blue text-white rounded" value="로그인">
-                        <input type="reset" class="px-2 py-1 bg-blue text-white rounded" value="새로고침">
-                        <a href="">ID/PW찾기</a>
-                    </div>
-                </div>
+                </form>
                 <form method="post" autocomplete="off">
                     <fieldset>
                         <legend>ID로그인</legend>
